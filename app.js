@@ -10,6 +10,24 @@ const newRouter = require('./routes/new');
 
 const app = express();
 
+app.locals.messages = [
+  {
+    text: "Hi there!",
+    user: "Amando",
+    added: new Date(),
+  },
+  {
+    text: "Hello World!",
+    user: "Charles",
+    added: new Date(),
+  },
+  {
+    text: "Howdy!",
+    user: "Jeff",
+    added: new Date(),
+  },
+];
+
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
