@@ -5,13 +5,17 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Form</h1>
+    <h1>New Message</h1>
     <form method="POST" action="/new">
-      <label for="author">Author</label>
-      <input type="text" name="author" id="author">
-      <label for="message">Message</label>
-      <input type="text" name="message" id="message">
-      <button type="submit">Submit</button>
+      <div>
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author">
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <input type="text" name="message" id="message">
+      </div>
+      <button type="submit">Send</button>
     </form>
   </body>
 </html>

@@ -5,13 +5,12 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <p>Welcome to <%= messages %></p>
-    <p>hello?</p>
-    <p><% JSON.stringify(messages) %></p>
+    <h1>Message Board</h1>
+    <a href="/new" alt="new message form">Send Message</a>
     <% for (let i = 0; i < messages.length; i++) { %>
-      <p>User: <%= messages[i].user %></p>
-      <p>Message:<%= messages[i].text %></p>
-      <p>Added:<%= messages[i].added %></p>
+      <h2><%= messages[i].user %></h2>
+      <p><%= messages[i].text %></p>
+      <small>Added: <%= messages[i].added %></small>
     <% } %>
   </body>
 </html>
